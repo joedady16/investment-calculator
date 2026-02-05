@@ -1,10 +1,11 @@
-import { CommonModule, CurrencyPipe } from '@angular/common';
+//import { CommonModule, CurrencyPipe } from '@angular/common';
 import { Component, computed, inject } from '@angular/core';
 import { InvestmentService } from '../investment.service';
 
 @Component({
   selector: 'app-investment-results',
-  imports: [CommonModule, CurrencyPipe],
+  standalone: false,
+  // imports: [CommonModule, CurrencyPipe],
   templateUrl: './investment-results.html',
   styleUrl: './investment-results.css',
 })
